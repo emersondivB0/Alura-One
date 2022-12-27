@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Encriptar - Desencriptar</title>
+</head>
+<body>
+    <header>
+
+
+
+
+    </header>
+
+    <main>
+        <h1>Encriptador y Desencriptador</h1>
+        <div class="caja">
+            <h2><img src=""></h2>
+            <form class="entrada">               
+                <!--<input type="text" id="inputText" placeholder="Caja de texto 1"><br>-->
+                <textarea name="" id="inputText" cols="70" rows="10" placeholder="Ingrese su texto aquí..."></textarea>
+                     
+            </form>
+
+            <form class="salida">
+                <textarea name="" id="outputText" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea><br>
+                <!--<input type="text" id="outputText" placeholder="Caja de texto 2">-->
+            </form> 
+
+            <form class="botones">
+                <input type="submit" value="Encriptar" id="encriptar">
+                <input type="submit" value="Desencriptar">
+                <input type="submit" value="Copiar" class="copiar">
+            </form>
+    
+        </div>
+
+        <script>
+            var textarea = document.getElementById("inputText");
+            var cryptar   = document.getElementById("encriptar");
+            cryptar.addEventListener('click', function(e) {
+                // Sleccionando el texto
+                textarea.select();
+                
+                // Copiando el texto seleccionado
+                // Debo tomar la frase que sea, detectar cada palabra,luego cada letra, compararla con mis condiciones y luego cambiarlas  la condición dada, después ese resultado mostrarlo en la segunda caja de texto
+                var phrase = document.execCommand('encriptar');
+                alert(cyptar + phrase)
+             });
+        </script>
+    </main>
+</body>
+</html>
