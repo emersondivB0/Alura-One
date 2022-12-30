@@ -12,49 +12,125 @@
     <title>Encriptar - Desencriptar</title>
 </head>
 <body>
-    <header>
-
+    <header class="titulo">
+        <h1>Encriptador y Desencriptador</h1>
 
 
 
     </header>
 
     <main>
-        <h1>Encriptador y Desencriptador</h1>
+        
+
         <div class="caja">
+            <form class="borrar">
+                <input type="submit" value="⟲" id="borrar">
+            </form>
+            <script>
+                var erase = document.getElementById("borrar");
+                erase.addEventListener('click', function(e){
+                    document.getElementById("outputText") = "";
+                    document.getElementById("inputText") = "";
+                });
+            </script>
+
             <h2><img src=""></h2>
-            <form class="entrada">               
+            <form class="entrada" onsubmit="return false">               
                 <!--<input type="text" id="inputText" placeholder="Caja de texto 1"><br>-->
                 <textarea name="" id="inputText" cols="70" rows="10" placeholder="Ingrese su texto aquí..."></textarea>
                      
             </form>
 
-            <form class="salida">
+            <form class="salida" onsubmit="return false">
                 <textarea name="" id="outputText" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea><br>
                 <!--<input type="text" id="outputText" placeholder="Caja de texto 2">-->
             </form> 
 
-            <form class="botones">
+            <form class="botones" onsubmit="return false">
                 <input type="submit" value="Encriptar" id="encriptar">
-                <input type="submit" value="Desencriptar">
-                <input type="submit" value="Copiar" class="copiar">
+                <!--<button id="encriptar">Encriptar</button>-->
+                <input id="desencriptar" type="submit" value="Desencriptar">
+                <input id="copia" type="submit" value="Copiar" class="copiar">
             </form>
     
         </div>
 
+        <!--
+            La letra "a" es convertida para "ai"
+            La letra "e" es convertida para "enter"
+            La letra "i" es convertida para "imes"       
+            La letra "o" es convertida para "ober"
+            La letra "u" es convertida para "ufat"
+        -->
+
         <script>
             var textarea = document.getElementById("inputText");
             var cryptar   = document.getElementById("encriptar");
+            var desencryptar = document.getElementById("desencriptar");
             cryptar.addEventListener('click', function(e) {
-                // Sleccionando el texto
-                textarea.select();
+                // Seleccionando el texto
+                // alert(textarea.value);
+                var frase1 = textarea.value;
+                var frase2 = "";
                 
-                // Copiando el texto seleccionado
+                for (var i = 0; i < frase1.length; i++){
+                    if (frase1[i] == "a"){
+                        frase2 = frase2 + "ai";
+                    }else if (frase1[i] == "e"){
+                        frase2 = frase2 + "enter";
+                    }else if (frase1[i] == "i"){
+                        frase2 = frase2 + "imes";
+                    }else if (frase1[i] == "o"){
+                        frase2 = frase2 + "ober";
+                    }else if (frase1[i] == "u"){
+                        frase2 = frase2 + "ufat";
+                    }else {
+                        frase2 = frase2 + frase1[i];
+                    }
+                    console.log(frase2)
+                }
+                document.getElementById("outputText").innerHTML = frase2;
+                //alert(frase2)
+
                 // Debo tomar la frase que sea, detectar cada palabra,luego cada letra, compararla con mis condiciones y luego cambiarlas  la condición dada, después ese resultado mostrarlo en la segunda caja de texto
-                var phrase = document.execCommand('encriptar');
-                alert(cyptar + phrase)
+             });
+
+             desencryptar.addEventListener('click', function(e) {
+                // Seleccionando el texto
+                // alert(textarea.value);
+                var frase3 = textarea.value;
+                var frase4 = "";
+
+                prueba = true;
+
+                while (prueba == true){
+                    frase4 = frase3.replace("ai","a")
+                }
+                
+                for (var j = 0; j < frase3.length; j++){
+                    if (frase3[j] == "a"){
+                        frase4 = frase4 + "ai";
+                    }else if (frase3[j] == "e"){
+                        frase4 = frase4 + "enter";
+                    }else if (frase3[j] == "i"){
+                        frase4 = frase4 + "imes";
+                    }else if (frase3[j] == "o"){
+                        frase4 = frase4 + "ober";
+                    }else if (frase3[j] == "u"){
+                        frase4 = frase4 + "ufat";
+                    }else {
+                        frase4 = frase4 + frase3[j];
+                    }
+                    console.log(frase4)
+                }
+                document.getElementById("outputText").innerHTML = frase4;
+                //alert(frase2)
+
+                // Debo tomar la frase que sea, detectar cada palabra,luego cada letra, compararla con mis condiciones y luego cambiarlas  la condición dada, después ese resultado mostrarlo en la segunda caja de texto
              });
         </script>
+
+        
     </main>
 </body>
 </html>

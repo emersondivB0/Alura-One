@@ -6,8 +6,12 @@ Dim gray #6F6866
 Black coffee #38302E
 */
 
+.titulo{
+    background-color: #ccdad1;
+    font-weight: bold;
+}
 .caja {
-    padding: 5%;
+    padding: 2%;
     width: 100%;
     height: 100%;
     position: relative;
@@ -43,7 +47,7 @@ Black coffee #38302E
     margin: auto;
 }
 
-.botones input{
+.botones input, button{
     width: 20%;
     padding: 15px 0;
     margin-right: 15px;
@@ -59,6 +63,13 @@ Black coffee #38302E
 
 .copiar{
     margin-left: 5px;
+}
+
+#borrar{
+    font-size: 18px;
+    background: #9CAEA9;
+    border-radius: 5px;
+    margin-left: 16px;
 }
 
 
