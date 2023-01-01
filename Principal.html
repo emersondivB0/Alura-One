@@ -23,9 +23,38 @@
         
 
         <div class="caja">
-            <form class="borrar">
-                <input type="submit" value="⟲" id="borrar">
-            </form>
+            
+            
+
+            <div class="bloque-entrada">
+                <form class="entrada" onsubmit="return false">               
+                    <!--<input type="text" id="inputText" placeholder="Caja de texto 1"><br>-->
+                    <textarea name="" id="inputText" placeholder="Ingrese su texto aquí..."></textarea>
+    
+                </form>
+                <form class="botones-entrada" onsubmit="return false">
+                    <input type="submit" value="Encriptar" id="encriptar">
+                    <!--<button id="encriptar">Encriptar</button>-->
+                    <input id="desencriptar" type="submit" value="Desencriptar">
+                </form>
+            </div>
+
+            <div class="bloque-salida">
+                <form class="salida" onsubmit="return false">
+                    <textarea readonly name="" id="outputText"  placeholder="Ningún mensaje fue encontrado"></textarea><br>
+                    <!--<input type="text" id="outputText" placeholder="Caja de texto 2">-->
+                </form> 
+    
+                <form class="boton-copia" onsubmit="return false">
+                    <input id="copia" type="submit" value="Copiar" class="copiar"><span id="copiarResp"></span>
+                </form>
+
+                <form class="borrar">
+                    <input type="submit" value="⟲" id="borrar">
+                </form>
+            </div>
+
+            
             <script>
                 var erase = document.getElementById("borrar");
                 erase.addEventListener('click', function(e){
@@ -33,25 +62,7 @@
                     document.getElementById("inputText") = "";
                 });
             </script>
-
-            <h2><img src=""></h2>
-            <form class="entrada" onsubmit="return false">               
-                <!--<input type="text" id="inputText" placeholder="Caja de texto 1"><br>-->
-                <textarea name="" id="inputText" cols="70" rows="10" placeholder="Ingrese su texto aquí..."></textarea>
-                     
-            </form>
-
-            <form class="salida" onsubmit="return false">
-                <textarea name="" id="outputText" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea><br>
-                <!--<input type="text" id="outputText" placeholder="Caja de texto 2">-->
-            </form> 
-
-            <form class="botones" onsubmit="return false">
-                <input type="submit" value="Encriptar" id="encriptar">
-                <!--<button id="encriptar">Encriptar</button>-->
-                <input id="desencriptar" type="submit" value="Desencriptar">
-                <input id="copia" type="submit" value="Copiar" class="copiar">
-            </form>
+            
     
         </div>
 
@@ -64,9 +75,11 @@
         -->
 
         <script>
-            var textarea = document.getElementById("inputText");
-            var cryptar   = document.getElementById("encriptar");
+            var textarea     = document.getElementById("inputText");         
+            var cryptar      = document.getElementById("encriptar");
             var desencryptar = document.getElementById("desencriptar");
+            
+
             cryptar.addEventListener('click', function(e) {
                 // Seleccionando el texto
                 // alert(textarea.value);
@@ -95,38 +108,59 @@
                 // Debo tomar la frase que sea, detectar cada palabra,luego cada letra, compararla con mis condiciones y luego cambiarlas  la condición dada, después ese resultado mostrarlo en la segunda caja de texto
              });
 
-             desencryptar.addEventListener('click', function(e) {
+            desencryptar.addEventListener('click', function(e) {
                 // Seleccionando el texto
                 // alert(textarea.value);
                 var frase3 = textarea.value;
-                var frase4 = "";
-
+                var frase4 = frase3;
+                var cadena = ["ai","enter","imes","ober","ufat"];
                 prueba = true;
 
                 while (prueba == true){
-                    frase4 = frase3.replace("ai","a")
-                }
-                
-                for (var j = 0; j < frase3.length; j++){
-                    if (frase3[j] == "a"){
-                        frase4 = frase4 + "ai";
-                    }else if (frase3[j] == "e"){
-                        frase4 = frase4 + "enter";
-                    }else if (frase3[j] == "i"){
-                        frase4 = frase4 + "imes";
-                    }else if (frase3[j] == "o"){
-                        frase4 = frase4 + "ober";
-                    }else if (frase3[j] == "u"){
-                        frase4 = frase4 + "ufat";
+                    console.log(prueba);
+                    frase4 = frase4.replace("ai","a");
+                    frase4 = frase4.replace("enter","e");
+                    frase4 = frase4.replace("imes","i");
+                    frase4 = frase4.replace("ober","o");
+                    frase4 = frase4.replace("ufat","u");
+                    console.log(prueba);
+                    if (frase4.includes("ai")){
+                        continue;
+                    }else if (frase4.includes("enter")){
+                        continue;
+                    }else if (frase4.includes("imes")){
+                        continue;
+                    }else if (frase4.includes("ober")){
+                        continue;   
+                    }else if (frase4.includes("ufat")){
+                        continue;
                     }else {
-                        frase4 = frase4 + frase3[j];
-                    }
-                    console.log(frase4)
+                        prueba = false;
+                    } 
+                    
                 }
+                console.log(prueba)
                 document.getElementById("outputText").innerHTML = frase4;
                 //alert(frase2)
 
                 // Debo tomar la frase que sea, detectar cada palabra,luego cada letra, compararla con mis condiciones y luego cambiarlas  la condición dada, después ese resultado mostrarlo en la segunda caja de texto
+            });
+
+            var textsalida = document.getElementById("outputText");
+            var copyar     = document.getElementById("copia");
+            var respuesta  = document.getElementById("copiarResp");
+            copyar.addEventListener('click', function(e) {
+                // Seleccionando el texto
+                textsalida.select(); 
+                try {
+                    // Copiando el texto seleccionado
+                    var exito = document.execCommand('copy');
+              
+                    if(exito) respuesta.innerHTML = 'Copiado!';
+                    else respuesta.innerHTML = 'No se pudo copiar!';
+                } catch (err) {
+                    respuesta.innerHTML = 'Navegador no soportado!';
+                }
              });
         </script>
 
