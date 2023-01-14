@@ -19,19 +19,17 @@
 
     </header>
 
-    <main>
-        
-
-        <div class="caja">
-            
-            
-
+    <main>   
+        <section class="caja">
+            <img title="Bienvenidos al Encriptador" class= "logo" src="/Imagenes/Logo1.png">         
             <div class="bloque-entrada">
+                
                 <form class="entrada" onsubmit="return false">               
                     <!--<input type="text" id="inputText" placeholder="Caja de texto 1"><br>-->
-                    <textarea name="" id="inputText" placeholder="Ingrese su texto aquí..."></textarea>
+                    <textarea name="" id="inputText" placeholder="Ingrese su texto aquí..."></textarea><br>
     
                 </form>
+
                 <form class="botones-entrada" onsubmit="return false">
                     <input type="submit" value="Encriptar" id="encriptar">
                     <!--<button id="encriptar">Encriptar</button>-->
@@ -46,12 +44,13 @@
                 </form> 
     
                 <form class="boton-copia" onsubmit="return false">
-                    <input id="copia" type="submit" value="Copiar" class="copiar"><span id="copiarResp"></span>
+                    <input id="copia" type="submit" value="Copiar" class="copiar">
                 </form>
-
-                <form class="borrar">
-                    <input type="submit" value="⟲" id="borrar">
+                    
+                <form >
+                    <input class="borrar" type="submit" value="⟲" id="borrar">
                 </form>
+                <span id="copiarResp"></span>
             </div>
 
             
@@ -64,7 +63,7 @@
             </script>
             
     
-        </div>
+        </section>
 
         <!--
             La letra "a" es convertida para "ai"

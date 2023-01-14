@@ -17,17 +17,31 @@ Black coffee #38302E
 .caja {
     background: url(Imagenes/fondo.svg);
     padding: 2%;
-    width: 70%;
+    width: 80%;
     height: auto;
     position: relative;
     margin: 0 auto;
     background-color: #ccdad1;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    border-radius: 10px;
+    width: 6%;
+    height: 6%;
+    opacity:0.9;
+}
+
+.logo:hover::before{
+    content: "Descripcion";
+    position: absolute;
 }
 
 .bloque-entrada{
     width: 60%;
     margin: 0 auto;
+    margin-bottom: 0px;
 }
 
 #inputText{
@@ -44,16 +58,11 @@ Black coffee #38302E
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
 }
-
-.bloque-salida{
-    width: 30%;
-    margin: 0 auto;
-}
-
 .botones-entrada input{
-    width: 45%;
+    width: 47%;
     padding: 15px 0;
     margin-right: 15px;
+    margin-top: 3px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -63,6 +72,17 @@ Black coffee #38302E
     float: left;
     transition: 1s all;
     cursor: pointer;
+}
+
+#desencriptar {
+    margin-right: 0%;
+    float: right;
+}
+
+.bloque-salida{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 0px;
 }
 
 #outputText{
@@ -80,9 +100,9 @@ Black coffee #38302E
 }
 
 .boton-copia input{
-    width: 75%;
+    width: 70%;
     padding: 15px 0;
-    margin-right: 15px;
+    margin-right: 5px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -95,45 +115,62 @@ Black coffee #38302E
 
 }
 
-
-
-
-
 .copiar{
     margin-left: 5px;
 }
 
-
 #borrar{
-    width: max-content;
+    width: 20%;
     font-size: 2.1em;
     color: white;
     background: #38302E;
     border-radius: 5px;
-    /*margin-left: 2%;*/
+    margin-right: 0;
     float: right;
 }
 
 /*Configuración especial para pantallas de diferente tamaño, en este caso pantallas de hasta 480px*/
-@media screen and (max-width:480px) {
-    h1 {
-        text-align: center;
+@media screen and (max-width: 720px) {
+    .botones-entrada input{
+        font-size: 10px;
     }
-    nav {
-        position: static;
+    .boton-copia input {
+        font-size: 10px;
+    }
+    #borrar {
+        font-size: 1.3em;
+    }
+    
+}
+
+@media screen and (max-width:520px) {
+    .logo {
+        margin-right: 100%;
+    }
+    .bloque-entrada {
+        padding: 2%;
+        min-width: 300px;
+        min-height: 100px;;
+    }
+    .bloque-salida {
+        padding: 2%;
+        min-width: 300px;
+        min-height: 100px;
     }
     .caja {
         width: auto;
+        height: auto;
     }
-    .lista-diferenciales, .imagenDiferenciales{
-        width: 100%;
+    #inputText, #outputText {
+        height:  200px;
     }
 }
 
-/*
-01010011 01110101 
+/*♡♥
+01010011 01110101
 01110011 01100001 
-01101110 01100001
-01010011 01100101 
-01101110
+01101110 01100001 
+00100000 01111001 
+00100000 01010011 
+01100101 01101110
 */
