@@ -28,12 +28,16 @@ Este proyecto se implementa utilizando Github Pages. Para hacerlo usted, siga es
 Para utilizar este encriptador / desencriptador, siga estos pasos:
 
 1. Abra su navegador web
-2. Navegue hasta la página web de Alura-One
+2. Navegue hasta el siguiente link [Encriptador](https://emersondivb0.github.io/Alura-One/)
 3. Ingrese el texto que desea encriptar o desencriptar en el campo de entrada
 4. Seleccione si desea encriptar o desencriptar el texto utilizando los botones correspondientes
 5. Haga clic en el botón "Encriptar" o "Desencriptar"
 6. El texto encriptado o desencriptado se mostrará en el campo de salida
 7. Tiene una botón para copiar el texto de salida y un boón que borra todo
+
+![Encriptador en navegador de escritorio](https://drive.google.com/file/d/17yZR3MKOR8JB_aUcR7v30OPSt9BTsLp2/view?usp=sharing)
+
+![Diseño Responsive](https://drive.google.com/file/d/1gKBASdLZmJq8wBO157ZjmfU2SqyMwSkc/view?usp=share_link)
 
 ## Contribución
 
