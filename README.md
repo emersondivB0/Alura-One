@@ -35,9 +35,9 @@ Para utilizar este encriptador / desencriptador, siga estos pasos:
 6. El texto encriptado o desencriptado se mostrará en el campo de salida
 7. Tiene una botón para copiar el texto de salida y un boón que borra todo
 
-![Encriptador en navegador de escritorio](https://drive.google.com/file/d/17yZR3MKOR8JB_aUcR7v30OPSt9BTsLp2/view?usp=sharing)
+![Encriptador en navegador de escritorio](https://drive.google.com/file/d/17yZR3MKOR8JB_aUcR7v30OPSt9BTsLp2/uc?usp=sharing)
 
-![Diseño Responsive](https://drive.google.com/file/d/1gKBASdLZmJq8wBO157ZjmfU2SqyMwSkc/view?usp=share_link)
+![Diseño Responsive](https://drive.google.com/file/d/1gKBASdLZmJq8wBO157ZjmfU2SqyMwSkc/uc?usp=share_link)
 
 ## Contribución
 
