@@ -85,19 +85,19 @@
                 var frase1 = textarea.value;
                 var frase2 = "";
                 
-                for (var i = 0; i < frase1.length; i++){
-                    if (frase1[i] == "a"){
+                for (const element of frase1){
+                    if (element == "a"){
                         frase2 = frase2 + "ai";
-                    }else if (frase1[i] == "e"){
+                    }else if (element == "e"){
                         frase2 = frase2 + "enter";
-                    }else if (frase1[i] == "i"){
+                    }else if (element == "i"){
                         frase2 = frase2 + "imes";
-                    }else if (frase1[i] == "o"){
+                    }else if (element == "o"){
                         frase2 = frase2 + "ober";
-                    }else if (frase1[i] == "u"){
+                    }else if (element == "u"){
                         frase2 = frase2 + "ufat";
                     }else {
-                        frase2 = frase2 + frase1[i];
+                        frase2 = frase2 + element;
                     }
                     console.log(frase2)
                 }
@@ -113,7 +113,7 @@
                 var frase3 = textarea.value;
                 var frase4 = frase3;
                 var cadena = ["ai","enter","imes","ober","ufat"];
-                prueba = true;
+                var prueba = true;
 
                 while (prueba == true){
                     console.log(prueba);

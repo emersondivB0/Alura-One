@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejemplo de validación de texto</title>
+	<meta charset="UTF-8">
+	<script>
+		function validarTexto() {
+			let texto = document.getElementById("texto").value;
+			let regex = /^[a-zñáéíóúü\s]*$/;
+			if(!regex.test(texto)) {
+				alert("Solo se permiten letras minúsculas, sin acentos ni caracteres especiales.");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Validación de texto</h1>
+	<label for="texto">Introduce un texto:</label><br>
+	<textarea id="texto" name="texto" rows="5" cols="50"></textarea><br>
+	<button onclick="validarTexto()">Validar</button>
+</body>
+</html>
