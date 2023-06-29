@@ -48,9 +48,9 @@ Para utilizar este encriptador / desencriptador, siga estos pasos:
 6. El texto encriptado o desencriptado se mostrará en el campo de salida
 7. Tiene una botón para copiar el texto de salida y un boón que borra todo
 
-![Encriptador en navegador de escritorio]([Imagenes/desktopAluraCrypt.png])
+![Encriptador en navegador de escritorio](Imagenes/desktopAluraCrypt.png)
 
-![Diseño Responsive]([Imagenes/phoneAluraCrypt.png])
+![Diseño Responsive](Imagenes/phoneAluraCrypt.png)
 
 ## Contribución
 
