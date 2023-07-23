@@ -1,4 +1,4 @@
-# Alura-One | Encriptador de Texto.
+# Alura-One | Text Encryptor.
 
 <p align="center" >
      <img width="200" heigth="200" src="https://www.aqskill.com/wp-content/uploads/2021/08/maxresdefault.jpg">
