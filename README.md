@@ -4,63 +4,66 @@
      <img width="200" heigth="200" src="https://www.aqskill.com/wp-content/uploads/2021/08/maxresdefault.jpg">
 </p>
 
-### Tecnologías utilizadas:
+### Technologies used:
 
-  - [HTML 5](https://developer.mozilla.org/es/docs/Web/HTTP)
-  - [CSS 3](https://developer.mozilla.org/es/docs/Web/CSS)
-  - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-  - [Visual Studio Code](https://code.visualstudio.com)
+- [HTML 5](https://developer.mozilla.org/es/docs/Web/HTTP)
+- [CSS 3](https://developer.mozilla.org/es/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Visual Studio Code](https://code.visualstudio.com)
+
+Alura Projects and Challenges.
+
+This is a project for the first challenge in the Alura specialization. It's a web encryptor/decryptor written in HTML, CSS, and JavaScript. The encryption is done using the following rules:
+
+- The letter "a" is converted to "ai"
+- The letter "e" is converted to "enter"
+- The letter "i" is converted to "imes"
+- The letter "o" is converted to "ober"
+- The letter "u" is converted to "ufat"
+
+## Implementation
+
+This project is implemented using Github Pages. To do it yourself, follow these steps:
+
+1. Create a new repository on Github.
+2. Clone the repository to your local machine.
+3. Add the HTML, CSS, and JavaScript files to the repository folder.
+4. Create an `index.html` file containing the necessary HTML code for your website.
+5. Add a link to your JavaScript file in the `index.html` file.
+6. Create a `README.md` file for your repository.
+7. Add a description of the project, implementation instructions, and any other relevant information to your `README.md` file.
+8. Push all the changes to the Github repository.
+9. Enable Github Pages in the repository settings to publish your website.
 
 
-Proyectos y challenges de Alura.
 
-Este es un proyecto para el primer challenge de la especialización de Alura. Se trata de un encriptador / desencriptador web escrito en HTML, CSS y JavaScript. La encriptación se realiza utilizando las siguientes reglas:
+## Usage
 
-- La letra "a" es convertida para "ai"
-- La letra "e" es convertida para "enter"
-- La letra "i" es convertida para "imes"
-- La letra "o" es convertida para "ober"
-- La letra "u" es convertida para "ufat"
+To use this encryptor/decryptor, follow these steps:
 
-## Implementación
+1. Open your web browser.
+2. Navigate to the following link: [Encryptor](https://emersondivb0.github.io/Alura-One/).
+3. Enter the text you want to encrypt or decrypt in the input field.
+4. Select whether you want to encrypt or decrypt the text using the corresponding buttons.
+5. Click the "Encrypt" or "Decrypt" button.
+6. The encrypted or decrypted text will be displayed in the output field.
+7. There is a button to copy the output text and a button to clear everything.
 
-Este proyecto se implementa utilizando Github Pages. Para hacerlo usted, siga estos pasos:
 
-1. Cree un nuevo repositorio en Github
-2. Clonar el repositorio en su máquina local
-3. Agregue los archivos HTML, CSS y JavaScript a la carpeta del repositorio
-4. Cree un archivo `index.html` que contenga el código HTML necesario para su sitio web
-5. Agregue un enlace a su archivo JavaScript en el archivo `index.html`
-6. Cree un archivo `README.md` para su repositorio
-7. Agregue una descripción del proyecto, instrucciones de implementación y cualquier otra información relevante a su archivo `README.md`
-8. Suba todos los cambios al repositorio en Github
-9. Active Github Pages en la configuración del repositorio para publicar su sitio web
+![Encryptor in Desktop Browser](Imagenes/desktopAluraCrypt.png)
 
-## Uso
+![Responsive Design](Imagenes/phoneAluraCrypt.png)
 
-Para utilizar este encriptador / desencriptador, siga estos pasos:
+## Contribution
 
-1. Abra su navegador web
-2. Navegue hasta el siguiente link [Encriptador](https://emersondivb0.github.io/Alura-One/)
-3. Ingrese el texto que desea encriptar o desencriptar en el campo de entrada
-4. Seleccione si desea encriptar o desencriptar el texto utilizando los botones correspondientes
-5. Haga clic en el botón "Encriptar" o "Desencriptar"
-6. El texto encriptado o desencriptado se mostrará en el campo de salida
-7. Tiene una botón para copiar el texto de salida y un boón que borra todo
+If you wish to contribute to this project, you can do so by following these steps:
 
-![Encriptador en navegador de escritorio](Imagenes/desktopAluraCrypt.png)
+1. Fork this repository on Github.
+2. Clone the forked repository to your local machine.
+3. Create a new branch for your changes.
+4. Make the desired changes in the branch.
+5. Submit a pull request to merge your changes into this repository.
 
-![Diseño Responsive](Imagenes/phoneAluraCrypt.png)
-
-## Contribución
-
-Si desea contribuir a este proyecto, puede hacerlo siguiendo estos pasos:
-
-1. Haga un fork de este repositorio en Github
-2. Clonar el repositorio bifurcado en su máquina local
-3. Cree una nueva rama para sus cambios
-4. Realice los cambios que desee en la rama
-5. Haga una solicitud de extracción para fusionar sus cambios en este repositorio
 
 link  Emerson González
 
