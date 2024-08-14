@@ -15,7 +15,7 @@ Black coffee #38302E
     text-align: center;
 }
 .caja {
-    background: url(Imagenes/fondo.svg);
+    background: url(../Imagenes/fondo.svg);
     padding: 2%;
     width: 80%;
     height: auto;
